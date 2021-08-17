@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --color-text-primary: rgb(7, 7, 7);
     --color-bg-primary: #202225;
     --font-primary: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -114,6 +114,7 @@
 }
 
 .bg {
+    transform: translateZ(0);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -231,12 +232,10 @@
 @keyframes animate {
     0%{
         transform: translateY(0) rotate(0deg);
-        opacity: 1;
         border-radius: 0;
     }
     100%{
         transform: translateY(-1000px) rotate(360deg);
-        opacity: 0;
         border-radius: 25%;
     }
 }
@@ -246,7 +245,7 @@
 }
 
 @keyframes bg-scrolling {
-    0% { background-position: 50px 50px }
+    0% { background-position: 50px 50px; }
 }
 
 .center {
@@ -256,4 +255,5 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
 }

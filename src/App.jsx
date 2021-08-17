@@ -5,9 +5,24 @@ import './App.css';
 export default class App extends React.Component {
   render() {
     return (
-      <div className="bg">
+      <div>
+        <div className="bg"></div>
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
         <div className="center">
-          <h1>TEST</h1>
+            <h1 style={{'font-family': 'Ginto Normal'}}>This is test</h1>
         </div>
       </div>
     );
